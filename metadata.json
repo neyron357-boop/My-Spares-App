@@ -1,0 +1,8 @@
+{
+  "name": "DUBAI SPARES CIS",
+  "description": "Мобильное приложение для закупщика автозапчастей в ОАЭ. Оффлайн-режим, упор на фото и скорость работы.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
