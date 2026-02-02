@@ -93,10 +93,10 @@ const NewOrder: React.FC = () => {
   const inputStyle = "w-full bg-neutral-900 border border-white/5 rounded-2xl px-5 py-4 text-white focus:border-amber-500 outline-none font-bold uppercase transition-all text-base placeholder:text-neutral-700 min-w-0 shadow-inner";
   const labelStyle = "text-neutral-600 text-[10px] font-black uppercase mb-2 block ml-2 tracking-[0.15em]";
 
-  const handleEnter = (e: React.KeyboardEvent, nextRef: React.RefObject<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      nextRef.current?.focus();
+  const handleEnter = (e: React.KeyboardEvent, nextRef: React.RefObject<HTMLInputElement | null>) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    nextRef.current?.focus();
     }
   };
 
