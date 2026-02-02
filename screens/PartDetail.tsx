@@ -131,10 +131,10 @@ const PartDetail: React.FC = () => {
     loadData();
   };
 
-  const handleEnter = (e: React.KeyboardEvent, nextRef: React.RefObject<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      nextRef.current?.focus();
+  const handleEnter = (e: React.KeyboardEvent, nextRef: React.RefObject<HTMLInputElement | null>) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    nextRef.current?.focus();
     }
   };
 
